@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var userApi = "https://randomuser.me/api/?nat=us,dk,fr,gb&exc=login&noinfo";
+  var userApi = "https://randomuser.me/api/?nat=gb&exc=login&noinfo";
   var userOptions = {
   	dataType: 'json',
   	results: 12,
@@ -18,7 +18,7 @@ $(document).ready(function() {
               photoHTML += '<div class="profile-info clearfix">';
                 photoHTML += '<h2 class="name">' + user.name.first + " " + user.name.last + '</h2>';
                 photoHTML += '<p class="email text-muted">' + user.email + '</p>';
-                photoHTML += '<p class="location-city text-muted">' + user.location.city + '</p>';
+                photoHTML += '<p class="location-city text-muted">' + user.location.city + ', UK</p>';
                 photoHTML += '<div class="is-modal">';
                 photoHTML += '<hr>';
                 photoHTML += '<p class="mobile-number text-muted">' + user.cell + '</p>';

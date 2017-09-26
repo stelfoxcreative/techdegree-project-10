@@ -115,6 +115,9 @@ ul {
     font-size: 20px;
 }
 
+.location-city {
+	text-transform: capitalize;
+}
 
 
 
